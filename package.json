@@ -1,0 +1,29 @@
+{
+  "name": "rthmn",
+  "version": "1.0.0",
+  "description": "Next Generation Forex / Stocks Toolkit - A powerful algorithmic trading library for creating and backtesting trading strategies",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "algorithmic-trading",
+    "forex-trading",
+    "stock-trading",
+    "trading",
+    "finance",
+    "technical-analysis",
+    "backtesting",
+    "trading-strategies"
+  ],
+  "author": "RTHMN <hey@rthmn.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rthmnapp/rthmn.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rthmnapp/rthmn/issues"
+  },
+  "homepage": "https://www.rthmn.com"
+}

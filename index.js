@@ -1,40 +1,18 @@
-class Strategy {
-  constructor(config) {
-    this.name = config.name;
-    this.timeframe = config.timeframe;
-    this.indicators = config.indicators;
-  }
-}
+/**
+ * RTHMN - Next Generation Forex / Stocks Toolkit
+ * A lightweight library for market data utilities and price formatting
+ */
 
-class Indicator {
-  constructor() {
-    this.values = [];
-  }
-}
+const priceUtils = require("./lib/price-utils");
 
-class SMA extends Indicator {
-  constructor(period) {
-    super();
-    this.period = period;
-  }
-}
+// Export individual utilities for convenience
+const { roundToDigits, formatPrice, getPipValue } = priceUtils;
 
-async function backtest(strategy, config) {
-  // Backtesting logic to be implemented
-  return {
-    returns: 0,
-    sharpeRatio: 0,
-    maxDrawdown: 0,
-  };
-}
-
-const indicators = {
-  SMA,
-};
-
+// Export everything
 module.exports = {
-  Strategy,
-  Indicator,
-  indicators,
-  backtest,
+  // Price utilities
+  priceUtils,
+  roundToDigits,
+  formatPrice,
+  getPipValue,
 };

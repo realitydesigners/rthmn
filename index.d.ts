@@ -3,11 +3,11 @@ export interface InstrumentConfig {
   digits?: number;
 }
 
-export function roundToDigits(value: number, digits: number): number;
 export function formatPrice(
   price: number,
-  instrument: InstrumentConfig | string
-): string;
+  instrument?: InstrumentConfig | string,
+  options?: { digits?: number; asNumber?: boolean }
+): string | number;
 export function getPipValue(instrumentConfig: InstrumentConfig): number;
 export function getInstrumentConfig(symbol: string): InstrumentConfig;
 
@@ -20,7 +20,6 @@ export type Instruments = {
 export const INSTRUMENTS: Instruments;
 
 export const priceUtils: {
-  roundToDigits: typeof roundToDigits;
   formatPrice: typeof formatPrice;
   getPipValue: typeof getPipValue;
 };

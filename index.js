@@ -4,6 +4,8 @@
  */
 
 const priceUtils = require("./lib/price-utils");
+const instruments = require("./lib/instruments");
+const { INSTRUMENTS, getInstrumentConfig } = instruments;
 
 // Export individual utilities for convenience
 const { roundToDigits, formatPrice, getPipValue } = priceUtils;
@@ -15,4 +17,8 @@ module.exports = {
   roundToDigits,
   formatPrice,
   getPipValue,
+  // Instruments (optional exports)
+  instruments,
+  INSTRUMENTS,
+  getInstrumentConfig,
 };
